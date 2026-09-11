@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      { "matcher": "*", "hooks": [ { "type": "command", "command": "python3 ~/.claude/turn-guard/turn_guard_hook.py", "timeout": 10 } ] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.claude/turn-guard/turn_guard_hook.py", "timeout": 10 } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.claude/turn-guard/turn_guard_hook.py", "timeout": 10 } ] }
+    ]
+  }
+}
